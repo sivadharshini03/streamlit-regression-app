@@ -3,32 +3,29 @@ import streamlit as st
 # ── PAGE CONFIG ────────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="Regression Playground",
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="collapsed"  # Sidebar always hidden
 )
 
 # ── CUSTOM CSS ─────────────────────────────────────────────────────────────────
 st.markdown("""
     <style>
-        body {
-            background-color: #f0f8ff;
-        }
         .main-title {
             font-size: 52px;
             font-weight: bold;
-            color: #1f77b4;
+            color: #FAFAFA;
             text-align: center;
             margin-top: 30px;
         }
         .subtitle {
             font-size: 38px;
-            color: #222;
+            color: #CCCCCC;
             text-align: center;
             margin-bottom: 10px;
         }
         .tagline {
             font-size: 28px;
-            color: #666;
+            color: #AAAAAA;
             text-align: center;
             margin-bottom: 40px;
         }
@@ -41,7 +38,7 @@ st.markdown("""
         .login-links a {
             margin-left: 15px;
             text-decoration: none;
-            color: #007BFF;
+            color: #00c7b7;
         }
         .try-button {
             display: flex;
@@ -51,7 +48,7 @@ st.markdown("""
         .ball {
             width: 40px;
             height: 40px;
-            background-color: #ff6f61;
+            background-color: #00c7b7; /* New bouncing ball color */
             border-radius: 50%;
             position: relative;
             animation: bounce 1.8s infinite alternate ease-in-out;
@@ -61,7 +58,6 @@ st.markdown("""
             0% { transform: translateY(0); }
             100% { transform: translateY(60px); }
         }
-        /* Hide sidebar and its toggle */
         [data-testid="stSidebar"] {
             display: none !important;
         }
